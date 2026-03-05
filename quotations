@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quotations - AI for Students</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">
+          <svg class="logo-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+          </svg>
+          <div>
+            <h1 class="logo-title" data-translate="siteTitle">AI for Students</h1>
+            <p class="logo-subtitle" data-translate="siteSubtitle">Using AI Responsibly in Your Studies</p>
+          </div>
+        </a>
+
+        <div class="header-controls">
+          <button id="languageToggle" class="btn-control" aria-label="Toggle language">
+            <img id="flagIcon" src="https://flagcdn.com/w80/gb.png" alt="English" width="32" height="24">
+          </button>
+          <button id="fontSizeBtn" class="btn-control" aria-label="Increase font size">
+            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+            <span id="fontSizeDisplay">100%</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-links">
+        <a href="prompts.html" class="nav-link">
+          <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+          </svg>
+          <span data-translate="navPrompts">Prompts</span>
+        </a>
+        <a href="quotations.html" class="nav-link">
+          <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path>
+          </svg>
+          <span data-translate="navQuotations">Quotations</span>
+        </a>
+        <a href="concerns.html" class="nav-link">
+          <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+          </svg>
+          <span data-translate="navConcerns">Concerns</span>
+        </a>
+        <a href="what-is-ai.html" class="nav-link">
+          <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+          </svg>
+          <span data-translate="navWhatIsAI">What is AI</span>
+        </a>
+        <a href="rules.html" class="nav-link">
+          <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+          </svg>
+          <span data-translate="navRules">Rules</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main">
+    <div class="container">
+      <div class="content-wrapper">
+        <!-- Intro Card -->
+        <div class="card hero-card">
+          <h2 class="hero-title">
+            <span lang="en">Citing AI in APA7 Style</span>
+            <span lang="no" style="display:none;">Sitere AI i APA7-stil</span>
+          </h2>
+          <p class="hero-text">
+            <span lang="en">When you use AI tools in your academic work, you must cite them properly to maintain academic integrity and avoid plagiarism accusations.</span>
+            <span lang="no" style="display:none;">Når du bruker AI-verktøy i ditt akademiske arbeid, må du sitere dem riktig for å opprettholde akademisk integritet og unngå plagiatsanklager.</span>
+          </p>
+        </div>
+
+        <!-- Warning Box -->
+        <div class="alert-box alert-danger mb-6">
+          <div class="section-header" style="margin-bottom: 1rem;">
+            <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" style="color: var(--color-red-600);">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+            </svg>
+            <div>
+              <h3 class="section-title" style="color: #7f1d1d; margin-bottom: 0.5rem;">
+                <span lang="en">Warning: Academic Integrity</span>
+                <span lang="no" style="display:none;">Advarsel: Akademisk integritet</span>
+              </h3>
+              <p style="font-size: 1.125rem; color: #7f1d1d; line-height: 1.75;">
+                <strong>
+                  <span lang="en">Using AI without proper citation is considered plagiarism and cheating.</span>
+                  <span lang="no" style="display:none;">Å bruke AI uten riktig sitering regnes som plagiat og juks.</span>
+                </strong>
+                <span lang="en"> Most institutions have serious consequences for academic dishonesty, including failing grades, suspension, or expulsion. Always check your institution's AI usage policy and cite appropriately.</span>
+                <span lang="no" style="display:none;"> De fleste institusjoner har alvorlige konsekvenser for akademisk uredelighet, inkludert stryk, suspensjon eller utvisning. Sjekk alltid institusjonens retningslinjer for AI-bruk og siter på riktig måte.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- APA7 Citation Format -->
+        <div class="rule-card border-blue">
+          <div class="rule-header">
+            <div class="rule-icon bg-blue">
+              <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="rule-title">
+                <span lang="en">APA7 Citation Format for AI Tools</span>
+                <span lang="no" style="display:none;">APA7-siteringsformat for AI-verktøy</span>
+              </h3>
+              <p class="rule-desc">
+                <span lang="en">According to APA 7th edition guidelines, AI tools should be cited as software.</span>
+                <span lang="no" style="display:none;">I henhold til APA 7. utgave retningslinjer, skal AI-verktøy siteres som programvare.</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="rule-details bg-blue-light" style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <div>
+              <h4 class="font-bold mb-4" style="font-size: 1.25rem;">
+                <span lang="en">In-Text Citation:</span>
+                <span lang="no" style="display:none;">Tekstsitat:</span>
+              </h4>
+              <p class="mb-3" style="font-size: 1.125rem;">
+                <span lang="en">When referencing AI in your text:</span>
+                <span lang="no" style="display:none;">Når du refererer til AI i teksten din:</span>
+              </p>
+              <div class="code-block" style="background: white; color: var(--color-slate-900); border: 2px solid var(--color-slate-300); padding: 1rem; border-radius: 0.5rem;">
+                (OpenAI, 2024)
+              </div>
+              <p class="mt-4" style="color: var(--color-slate-700);">
+                <strong>
+                  <span lang="en">Example in a sentence:</span>
+                  <span lang="no" style="display:none;">Eksempel i en setning:</span>
+                </strong><br>
+                <span lang="en">"According to the analysis generated by ChatGPT (OpenAI, 2024), the main causes of climate change include..."</span>
+                <span lang="no" style="display:none;">"I henhold til analysen generert av ChatGPT (OpenAI, 2024), inkluderer hovedårsakene til klimaendringer..."</span>
+              </p>
+            </div>
+
+            <div>
+              <h4 class="font-bold mb-4" style="font-size: 1.25rem;">
+                <span lang="en">Reference List Entry:</span>
+                <span lang="no" style="display:none;">Referanseliste:</span>
+              </h4>
+              <p class="mb-3" style="font-size: 1.125rem;">
+                <span lang="en">In your reference list at the end:</span>
+                <span lang="no" style="display:none;">I referanselisten på slutten:</span>
+              </p>
+              <div class="code-block" style="background: white; color: var(--color-slate-900); border: 2px solid var(--color-slate-300); padding: 1rem; border-radius: 0.5rem; overflow-x: auto;">
+                OpenAI. (2024). <em>ChatGPT</em> (GPT-4) [Large language model]. https://chat.openai.com
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Including Prompts -->
+        <div class="rule-card border-green">
+          <div class="rule-header">
+            <div class="rule-icon bg-green">
+              <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="rule-title">
+                <span lang="en">Including Your Prompt in Citations</span>
+                <span lang="no" style="display:none;">Inkludere prompten din i sitater</span>
+              </h3>
+              <p class="rule-desc">
+                <span lang="en">For transparency, you should also include the prompt you used when citing AI.</span>
+                <span lang="no" style="display:none;">For åpenhet bør du også inkludere prompten du brukte når du siterer AI.</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="rule-details bg-green-light">
+            <h4 class="font-bold mb-4" style="font-size: 1.25rem;">
+              <span lang="en">Example with Prompt:</span>
+              <span lang="no" style="display:none;">Eksempel med prompt:</span>
+            </h4>
+
+            <div class="mb-4">
+              <p class="font-bold mb-2" style="color: var(--color-slate-800);">
+                <span lang="en">Prompt used:</span>
+                <span lang="no" style="display:none;">Brukt prompt:</span>
+              </p>
+              <div class="example-box" style="background: white;">
+                <p class="example-content" style="font-style: italic;">
+                  <span lang="en">"Explain the main causes of climate change in simple terms suitable for a college essay."</span>
+                  <span lang="no" style="display:none;">"Forklar hovedårsakene til klimaendringer på enkelt språk egnet for en høyskoleoppgave."</span>
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <p class="font-bold mb-2" style="color: var(--color-slate-800);">
+                <span lang="en">In-text citation:</span>
+                <span lang="no" style="display:none;">Tekstsitat:</span>
+              </p>
+              <div class="example-box" style="background: white;">
+                <p class="example-content">
+                  <span lang="en">When asked to "Explain the main causes of climate change in simple terms suitable for a college essay," ChatGPT identified greenhouse gas emissions as the primary factor (OpenAI, 2024).</span>
+                  <span lang="no" style="display:none;">Da ChatGPT ble bedt om å "Forklar hovedårsakene til klimaendringer på enkelt språk egnet for en høyskoleoppgave," identifiserte den klimagassutslipp som hovedfaktoren (OpenAI, 2024).</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other AI Tools -->
+        <div class="card" style="border: 2px solid var(--color-purple-500);">
+          <h3 class="section-title" style="margin-bottom: 1.5rem;">
+            <span lang="en">Citations for Other AI Tools</span>
+            <span lang="no" style="display:none;">Sitater for andre AI-verktøy</span>
+          </h3>
+
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <div class="example-box" style="background: #faf5ff; border-color: #e9d5ff;">
+              <h4 class="font-bold mb-2">Google Gemini:</h4>
+              <div class="code-block" style="background: white; color: var(--color-slate-900); border: 2px solid var(--color-slate-300); padding: 0.75rem; border-radius: 0.5rem; overflow-x: auto;">
+                Google. (2024). <em>Gemini</em> [Large language model]. https://gemini.google.com
+              </div>
+            </div>
+
+            <div class="example-box" style="background: #faf5ff; border-color: #e9d5ff;">
+              <h4 class="font-bold mb-2">Anthropic Claude:</h4>
+              <div class="code-block" style="background: white; color: var(--color-slate-900); border: 2px solid var(--color-slate-300); padding: 0.75rem; border-radius: 0.5rem; overflow-x: auto;">
+                Anthropic. (2024). <em>Claude</em> [Large language model]. https://claude.ai
+              </div>
+            </div>
+
+            <div class="example-box" style="background: #faf5ff; border-color: #e9d5ff;">
+              <h4 class="font-bold mb-2">Microsoft Copilot:</h4>
+              <div class="code-block" style="background: white; color: var(--color-slate-900); border: 2px solid var(--color-slate-300); padding: 0.75rem; border-radius: 0.5rem; overflow-x: auto;">
+                Microsoft. (2024). <em>Copilot</em> [AI assistant]. https://copilot.microsoft.com
+              </div>
+            </div>
+          </div>
+
+          <div class="alert-box alert-info mt-6" style="background: #e9d5ff; border-color: #a855f7;">
+            <p>
+              <strong>
+                <span lang="en">Important:</span>
+                <span lang="no" style="display:none;">Viktig:</span>
+              </strong>
+              <span lang="en"> Always use the date you accessed the AI tool, as responses can vary over time. Also verify your institution's specific citation requirements, as they may differ.</span>
+              <span lang="no" style="display:none;"> Bruk alltid datoen du brukte AI-verktøyet, siden svarene kan variere over tid. Verifiser også institusjonens spesifikke siteringskrav, da de kan variere.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p data-translate="footerText">© 2026 AI for Students - Educational Resource for Responsible AI Use</p>
+      <p data-translate="footerAccessibility">Designed with universal accessibility principles in mind</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="rules-translate.js"></script>
+</body>
+</html>
