@@ -77,17 +77,17 @@ body {
 .logo {
   display: flex;
   align-items: baseline;
-  gap: 1.5rem;
+  gap: 1rem;
   text-decoration: none;
   color: white;
 }
 
 .logo-icon {
-  width: 5rem;
-  height: 5rem;
+  width: 5.5rem;
+  height: 4rem;
   flex-shrink: 0;
-  object-fit: contain;
-  align-self: flex-end;
+  object-fit: center;
+  align-self: center ;
 }
 
 .logo-title {
@@ -99,7 +99,7 @@ body {
 .logo-subtitle {
   font-size: 0.875rem;
   opacity: 0.9;
-  line-height: 1.2;
+  line-height: 2;
 }
 
 .header-controls {
