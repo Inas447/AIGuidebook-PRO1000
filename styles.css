@@ -455,6 +455,57 @@ body {
   margin-bottom: 1rem;
 }
 
+.rule-header.is-collapsible {
+  cursor: pointer;
+  align-items: center;
+}
+
+.rule-header.is-collapsible .accordion-icon {
+  margin-left: auto;
+  color: var(--color-slate-700);
+  align-self: center;
+}
+
+.rule-header.is-collapsible > div:nth-child(2) {
+  flex: 1;
+  min-width: 0;
+}
+
+.section-header.is-collapsible {
+  cursor: pointer;
+}
+
+.section-header.is-collapsible .accordion-icon {
+  margin-left: auto;
+  color: var(--color-slate-700);
+  align-self: center;
+}
+
+.section-header.is-collapsible > div:nth-child(2) {
+  flex: 1;
+  min-width: 0;
+}
+
+.rule-header.is-collapsible:focus-visible,
+.section-header.is-collapsible:focus-visible {
+  outline: 3px solid var(--color-blue-300);
+  outline-offset: 4px;
+  border-radius: 0.5rem;
+}
+
+.rule-header.is-collapsible:hover .accordion-icon,
+.section-header.is-collapsible:hover .accordion-icon {
+  color: var(--color-slate-900);
+}
+
+.rule-details.collapsed {
+  display: none;
+}
+
+.collapsible-content.collapsed {
+  display: none;
+}
+
 .rule-icon {
   padding: 0.75rem;
   border-radius: 0.5rem;
