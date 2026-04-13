@@ -773,7 +773,7 @@ a.link:hover {
 .text-slate-700 { color: var(--color-slate-700); }
 
 .rule-details-purple { background: #faf5ff; border-color: #e9d5ff; }
-.rule-details-amber { background: #fef9c3; border-color: #fde047; }
+.rule-details-amber { background: var(--color-amber-50); border-color: var(--color-amber-200); }
 .text-lg { font-size: 1.125rem; }
 .text-xl { font-size: 1.25rem; }
 .text-slate-800 { color: var(--color-slate-800); }
