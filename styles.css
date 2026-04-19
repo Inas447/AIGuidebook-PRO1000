@@ -346,7 +346,7 @@ body {
 }
 
 .section-icon {
-  padding: 1rem;
+  padding: 0.75rem;
   border-radius: 0.5rem;
   flex-shrink: 0;
   color: white;
@@ -377,7 +377,6 @@ body {
 .section-desc {
   font-size: 1.125rem;
   color: var(--color-slate-700);
-  line-height: 1.75;
 }
 
 /* Tips Card */
@@ -420,8 +419,8 @@ body {
   background: var(--color-slate-50);
   border: 2px solid var(--color-slate-300);
   border-radius: 0.5rem;
-  padding: 1.0rem;
-  margin: 0.5rem;
+  padding: 1.5rem;
+  margin: 0;
 }
 
 .example-content {
@@ -543,6 +542,10 @@ body {
 
 .collapsible-content.collapsed {
   display: none;
+}
+
+.collapsible-content {
+  padding: 0;
 }
 
 .rule-icon {
@@ -712,6 +715,10 @@ body {
     padding: 2rem;
   }
   
+  .rule-card {
+    padding: 2rem;
+  }
+  
   .tips-card {
     padding: 2rem;
   }
@@ -756,7 +763,7 @@ a.link:hover {
 /* Inline-style replacement classes */
 .text-italic { font-style: italic; }
 .svg-inline-middle { display: inline-block; vertical-align: middle; margin-right: 0.5rem; }
-.container-vertical-gap { margin-top: 1rem; display: flex; flex-direction: column; }
+.container-vertical-gap { margin-top: 1rem; display: flex; flex-direction: column; gap: 0.75rem; }
 .link-large { font-size: 1.125rem; }
 .flex-row-center-gap { display: flex; align-items: center; gap: 1rem; flex: 1; }
 .card-border-purple { border: 2px solid var(--color-purple-500); }
