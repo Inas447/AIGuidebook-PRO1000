@@ -135,13 +135,26 @@ function initAccordions() {
     });
   });
 
-  // On mobile, collapse all sections by default
+  // Set default states based on screen size
+  updateAccordionStates();
+
+  // Listen for window resize to update states
+  window.addEventListener('resize', updateAccordionStates);
+}
+
+function updateAccordionStates() {
   if (window.matchMedia('(max-width: 768px)').matches) {
+    // On mobile, collapse all sections by default
     document.querySelectorAll('.is-collapsible').forEach(function(header) {
       setCollapsibleState(header, false);
     });
     document.querySelectorAll('button.accordion-header').forEach(function(header) {
       setAccordionButtonState(header, false);
+    });
+  } else {
+    // On desktop, expand all accordion sections by default
+    document.querySelectorAll('button.accordion-header').forEach(function(header) {
+      setAccordionButtonState(header, true);
     });
   }
 }
